@@ -17,11 +17,13 @@ build:
 
 requirements:
   build:
-    - 7za
-    - protoc
+    - 7za # [win]
+    - protoc # [win]
+    - protobuf # [not win]
     - python
     - wget
 
   run:
     - python
-    - protoc
+    - protoc # [win]
+    - protobuf # [not win]
