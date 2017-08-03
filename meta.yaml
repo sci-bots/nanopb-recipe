@@ -19,11 +19,11 @@ requirements:
   build:
     - 7za # [win]
     - protoc # [win]
-    - protobuf # [not win]
+    - protobuf
     - python
     - wget
 
   run:
     - python
     - protoc # [win]
-    - protobuf # [not win]
+    - protobuf
