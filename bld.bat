@@ -9,7 +9,7 @@ md "%MODULE_DIR%"
 if errorlevel 1 exit 1
 copy generator\nanopb_generator.py "%MODULE_DIR%\__main__.py"
 if errorlevel 1 exit 1
-echo "" > nanopb_generator\__init__.py
+echo "" > "%MODULE_DIR%\__init__.py"
 if errorlevel 1 exit 1
 
 REM Generate nanopb Python protobuf definitions.
